@@ -1,0 +1,682 @@
+/*=============================TAB CONTENT==========================*/
+/*
+    1. Reset CSS
+
+*/
+
+/*=========================Reset CSS=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.container-fluid {
+    width: 1200px;
+}
+
+/*=====================Font============================*/
+@font-face {
+    src: url(../font/Montserrat/Montserrat-Bold.ttf);
+    font-family: Montserrat-Bold;
+}
+
+@font-face {
+    src: url(../font/FontsFree-Net-SFProDisplay-Semibold.ttf);
+    font-family: SFProDisplay-Semibold;
+}
+
+@font-face {
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+    font-family: Roboto-Bold;
+}
+
+@font-face {
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+
+@font-face {
+    src: url(../font/Roboto/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+
+@font-face {
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+    font-family: Roboto-Medium;
+}
+
+@font-face {
+    src: url(../font/utm-aurora.ttf);
+    font-family: utm-aurora;
+}
+
+/*===========================Animation=====================*/
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+/*=============================Header=========================*/
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header .header__top {
+    padding: 3.3rem 0 3.3rem;
+    
+}
+
+.header .header__logo {
+   
+}
+
+.header .header__top .header__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .header__top .header__input .header__input--item {
+    width: 90%;
+    height: 5rem;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.header .header__top .header__input .header__input--item:focus {
+    outline: 0;
+}
+
+.header .header__top .header__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header .header__top .header__contact .header__contact--list {
+    
+}
+
+.header .header__top .header__contact .header__contact--list .header__contact--item {
+    font-size: 1.6rem;
+    
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    background-color: #0059A9;
+    align-items: center;
+}
+
+.fixed {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header__menu .header__menu--list {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin: 0;
+}
+
+.header__menu .header__menu--list .header__menu--item {
+    position: relative;
+    display: flex;
+    padding: 0 3rem;
+}
+
+.header__menu .header__menu--list .header__menu--item i {
+    padding-left: 0.8rem;
+}
+
+.header__menu .header__menu--list .header__menu--item:hover {
+    background-color: #5a728b;
+}
+
+.header__menu .header__menu--list .header__menu--item a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat-Bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu .menu__scroll {
+    background-color: #000;
+}
+
+/*==========================Header__menu--down=================*/
+
+.header__menu .header__menu--list .header__menu--item .header__menu--down {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: -25%;
+    background-color: #f6f6f6;
+    display: none;
+    z-index: 1;
+    opacity: 0.9;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    animation: fadeIn ease-in-out 0.2s;
+}
+
+.header__menu .header__menu--list .header__menu--item .header__menu--down li {
+    padding: 1rem 1rem;
+}
+
+.header__menu .header__menu--list .header__menu--item .header__menu--down li:hover {
+    background-color: #0059A9;
+}
+
+.header__menu .header__menu--list .header__menu--item .header__menu--down a {
+    color: #212121;
+    font-size: 1.5rem;
+    padding: 0;
+    font-family: Roboto-Medium;
+    position: relative;
+}
+
+.header__menu .header__menu--list .header__menu--item .header__menu--down .fa-caret-right {
+    position: absolute;
+    right: 5%;
+}
+
+.header__menu .header__menu--list .header__menu--item:hover .header__menu--down{
+    display: block;
+}
+
+/*=============================Banner=========================*/
+
+.banner {
+    
+}
+
+.banner img {
+    height: 79vh;
+    
+}
+/*=========================Product=============================*/
+.product {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.product h2 {
+    font-size: 3rem;
+    font-family: SFProDisplay-Semibold;
+}
+
+.product__title {
+    
+}
+
+.product__title .title {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.product .product__title .title b{
+    display: block;
+    flex: 1;
+    height: 3px;
+    background-color: rgba(201, 201, 201, 0.733);
+}
+
+.product .product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .product__item .owl-nav, .owl-dots {
+    display: none;
+}
+
+.product .product__item .product__item--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product .product__item--img img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.product .product__item--img h4 {
+    font-size: 2rem;
+}
+
+/*=============================Utilities=============================*/
+
+.utilities {
+    padding-top: 5rem;
+}
+
+.utilities .utilities__img {
+    background-color: #000;
+    overflow: hidden;
+    visibility: visible;
+    position: relative;
+}
+
+.utilities .utilities__img img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.utilities .utilities__img:hover .utilities__img--title {
+    color: #fff;
+}
+
+.utilities .utilities__img .utilities__img--title {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    color: #0059A9;
+}
+
+.utilities .utilities__img .utilities__img--title h3 {
+    font-size: 3rem;
+    font-family: SFProDisplay-Semibold;
+    margin: 0;
+}
+
+
+/*=================================Hot Product========================*/
+.hotproduct {
+    background-image: url(../img/swift-banner-5.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15rem;
+    position: relative;
+}
+
+.hotproduct .hotproduct__text {
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    background-color: #0059a9;
+    width: 625px;
+    color: #fff;
+    padding: 6rem 7rem 8rem;
+    z-index: 0;
+}
+
+.hotproduct .hotproduct__text h1 {
+    font-size: 4rem;
+    font-family: Roboto-Bold;
+    margin-bottom: 3rem;
+}
+
+.hotproduct .hotproduct__text p {
+    font-family: Roboto-Regular;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+}
+
+.hotproduct .hotproduct__text::after {
+    content: "";
+    position: absolute;
+    top: -58px;
+    right: -43px;
+    bottom: -58px;
+    left: 174px;
+    border: solid 6px #0059a9;
+    border-right: none;
+    z-index: -1;
+}
+
+.hotproduct .hotproduct__text .hotproduct__text--link {
+    border: 3px solid #fff;
+    padding: 1.5rem 5rem;
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: Roboto-Medium;
+    margin-right: 1rem;
+}
+
+.hotproduct .hotproduct__text .hotproduct__text--link:hover {
+    background-color: #fff;
+    color: #0059A9;
+}
+
+/*==============================Service=========================*/
+.service {
+    background-image: url(../img/service-bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.service .service__title {
+    
+}
+
+.service .service__title .title {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.service .service__title .title b {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.service .service__content .service__content--img {
+    position: relative;
+    width: 100%;
+}
+
+.service .service__content .bg-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/bg-arrow.png);
+    width: 385px;
+    height: 175px;
+    margin-left: 15px;
+}
+
+.service .service__content .bg-arrow h4 {
+    color: #fff;
+    font-size: 2.3rem;
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+}
+
+.service .service__content .service__img--title {
+    position: absolute;
+    background-color: rgba(0, 89, 169, 0.9);
+    top: 0;
+    right: 15px;
+    left: 15px;
+    bottom: 0;
+    color: #fff;
+    padding: 35px 50px 0 40px;
+    text-align: right;
+    display: none;
+}
+
+.service .service__content .service__img--title .service__img--btn {
+    padding: 1rem 2.5rem;
+    color: white;
+    font-size: 1.8rem;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-family: Roboto-Medium;
+}
+
+.service .service__content .service__img--title .service__img--btn:hover {
+    background-color: #fff;
+    color: #0059a9;
+}
+
+.service .service__content .service__img--title h5 {
+    font-size: 2.5rem;
+}
+
+.service .service__content .service__img--title p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    padding-top: 2.5rem;
+}
+
+.service__content--item:hover .service__img--title{
+    display: block;
+}
+
+.service .service__content .service__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.service .service__content .service__btn .service__btn--item {
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 1.5rem 5rem;
+    font-size: 2.2rem;
+    color: #fff;
+    font-family: Roboto-Medium;
+}
+
+.service .service__content .service__btn .service__btn--item i {
+    padding-left: 1rem;
+}
+
+.service .service__content .service__btn .service__btn--item:hover {
+    background-color: #fff;
+    color: #0059a9;
+}
+
+/*===============================News====================================*/
+
+.news {
+    margin-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.news__title {
+    margin-bottom: 10rem;
+}
+
+.news__title .title {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.news__title .title b {
+    display: block;
+    flex: 1;
+    height: 3px;
+    background-color: rgba(201, 201, 201, 0.733);
+}
+
+.news .news__list a {
+    font-size: 1.6rem;
+    font-family: Roboto-Medium;
+    text-decoration: none;
+    color: #0059A9;
+}
+
+.news .news__list a:hover {
+    color: #001d9c;
+}
+
+.news .news__list p {
+    font-size: 1.5rem;
+    font-family: Roboto-Regular;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+}
+
+.news .news__list img:hover {
+    opacity: 0.9;
+}
+
+/*==========================Footer=============================*/
+
+.footer {
+    
+}
+
+.footer .footer__banner {
+    background-image: url(../img/footer-bg.png);
+    height: 15rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer .footer__banner .footer__banner--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer__banner .footer__banner--item h3 {
+    font-size: 2.6rem;
+    color: #fff;
+    font-family: utm-aurora;
+}
+
+.footer .footer__banner .footer__banner--item a {
+    background-color: red;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    font-family: Roboto-Medium;
+    text-decoration: none;
+}
+
+.footer .footer__banner .footer__banner--item a:hover {
+    background-color: #0059A9;
+}
+
+.footer .footer__text {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer__text .footer__text--title h4{
+    font-size: 2rem;
+    font-family: Roboto-Bold;
+    margin-bottom: 2rem;
+}
+
+.footer .footer__text .footer__text--list li {
+    font-size: 1.5rem;
+    font-family: Roboto-Regular;
+    margin-bottom: 1rem;
+}
+
+.footer .footer__text .footer__text--list a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer .footer__text .footer__text--list a:hover {
+    color: #0059A9;
+}
+
+.footer .footer__text .footer__list--icon {
+    display: flex;
+}
+
+.footer .footer__text .footer__list--icon .footer__icon {
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+.footer .footer__text .footer__list--icon i {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #666666;
+}
+
+.footer .footer__text .footer__list--icon i:hover {
+    color: #0059A9;
+}
+
+.footer .footer__last {
+    padding-top: 3rem;
+}
+
+.footer .footer__last h5 {
+    font-size: 1.4rem;
+    font-family: Roboto-Bold;
+}
+
+.footer .footer__last h4 {
+    font-size: 1.8rem;
+    font-family: Roboto-Bold;
+    color: #0059A9;
+    padding: 1.5rem 0;
+}
+
+.footer .footer__last p {
+    font-size: 1.4rem;
+    color: #666666;
+    font-family: Roboto-Regular;
+}
+
+.footer .footer__last i {
+    font-size: 1.5rem;
+    color: #0059A9;
+}

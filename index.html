@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/assets/css/animate.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--Start Header-->
+        <div class="header">
+            <div class="container-fluid" style="width: 1200px;" >
+                <div class="header__top">
+                    <div class="row">
+                        <div class="header__logo col-lg-4">
+                            <img src="./assets/img/logo-suzuki-01.png">
+                        </div>
+                        <div class="header__input col-lg-4" class="header__input">
+                            <input type="text" placeholder="Nhập từ khóa cần tìm..." class="header__input--item">
+                        </div>
+                        <div class="col-lg-4 header__contact">
+                            <ul class="header__contact--list">
+                                <li class="header__contact--item">Hotline KD: <span style="font-size: 1.8rem; font-weight: bold;">0976.189.207</span></li>
+                                <li class="header__contact--item">Hotline CS: <span style="font-size: 1.8rem; font-weight: bold;">0976.189.207</span></li>
+                                <li class="header__contact--item">Hotline DV: <span style="font-size: 1.8rem; font-weight: bold;">0976.189.207</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="container-fluid" style="width: 1200px;">
+                    <ul class="header__menu--list">
+                        <li class="header__menu--item">
+                            <a href="">
+                            TRANG CHỦ
+                            </a>
+                        </li>
+                        <li class="header__menu--item">
+                            <a href="">
+                            GIỚI THIỆU
+                            <i class="fas fa-caret-down"></i>
+                                <div class="header__menu--down">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Giới thiệu NISU
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                SUZUKI Việt Nam
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Thông điệp từ Ban 
+                                                <i class="fas fa-caret-right"></i>
+                                                <a href="">
+                                                    Quản Trị
+                                                </a>
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__menu--item">
+                            <a href="">
+                                SẢN PHẨM
+                                <i class="fas fa-caret-down"></i>
+                                <div class="header__menu--down">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Xe Du lịch
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Xe Thương mại
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__menu--item">
+                            <a href="">
+                                MUA XE
+                                <i class="fas fa-caret-down"></i>
+                                <div class="header__menu--down">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Bảng giá xe đề xuất
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Dự toán chi phí
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Mua xe SUZUKI trả 
+                                                <i class="fas fa-caret-right"></i>
+                                                <a href="">
+                                                    góp
+                                                </a>
+                                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đăng ký lái thử
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__menu--item">
+                            <a href="">
+                                DỊCH VỤ
+                                <i class="fas fa-caret-down"></i>
+                                <div class="header__menu--down">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Dịch vụ sửa chữa
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Dịch vụ sau bán hàng
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Bảo hành
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Phụ tùng
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Đóng thùng xe ô tô SUZUKI
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            </li>
+                        <li class="header__menu--item">
+                            <a href="">
+                                TIN TỨC
+                                <i class="fas fa-caret-down"></i>
+                                <div class="header__menu--down">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Tin tức chung
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Tin khuyến mại
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Tin tuyển dụng
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Album video
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Album ảnh
+                                                <i class="fas fa-caret-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__menu--item"><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Header-->
+        <!--Start Banner-->
+        <div class="banner owl-carousel owl-theme" style="z-index: 0;">
+            <img src="./assets/img/banner-pages.jpg">
+            <img src="./assets/img/celerio-banner-2.png">
+            <img src="./assets/img/swift-banner-new.jpg">
+            <img src="./assets/img/XL7-banner.jpg">
+        </div>
+        <!--End Banner-->
+        <!--Start Product-->
+        <div class="product">
+            <div class="container-fluid" style="width: 1200px;">
+                <div class=" product__title" style="margin-bottom: 5rem;">
+                    <h3 class="title">
+                        <b></b>
+                        <span style="border: 3px solid rgba(201, 201, 201, 0.733); padding: 1rem 2rem; display: flex; align-items: center;">
+                            <i style="font-size: 2rem; padding-right: 1rem; color: #6f6f6f;" class="fas fa-bars"></i>
+                            SẢN PHẨM
+                        </span>
+                        <b></b>
+                    </h3>
+                </div>
+                <h2 style="margin-bottom: 3rem;">Xe du lịch</h2>
+                <div class="product__item owl-carousel owl-theme">
+                    <div class="product__item--img">
+                        <div style="height: 256.29px;">
+                            <img src="./assets/img/celerio.png" style="padding-top: 2rem;">
+                        </div>
+                        <h4>SUZUKI CELERIO</h4>
+                    </div>
+                    <div class="product__item--img">
+                        <img src="./assets/img/ertiga-thumb.png">
+                        <h4>SUZUKI ERIGA</h4>
+                    </div>
+                    <div class="product__item--img">
+                        <img src="./assets/img/SWIFT-DO.png">
+                        <h4>SUZUKI SWIFT</h4>
+                    </div>
+                    <div class="product__item--img" style="height: 100%;">
+                        <div style="height: 256.29px;">
+                            <img src="./assets/img/xl7-thumb.png" style="padding-top: 2rem;;">
+                        </div>
+                        <h4>SUZUKI XL7</h4>
+                    </div>
+                </div>
+                <h2 style="margin: 6rem 0 4rem;">Xe thương mại</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="product__item--img">
+                            <img src="./assets/img/suzuki-carry-truck-thiet-ke-4-ngon.png">
+                            <h4 style="text-align: center; padding-top: 2rem;">SUZUKI 5 TẠ</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product__item--img">
+                            <div style="height: 246.67px;">
+                                <img src="./assets/img/Super-carry-van-thumbnail.png">
+                            </div>
+                            <h4 style="text-align: center; padding-top: 2rem;">XE BÁN TẢI SUZUKI</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product__item--img">
+                            <div style="height: 246.67px;">
+                                <img src="./assets/img/new-super-carry-pro-thumbnail-fix.png">
+                            </div>
+                            <h4 style="text-align: center; padding-top: 2rem;">SUZUKI 7 TẠ</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class=" product__title" style="padding-top: 10rem">
+                    <h3 class="title">
+                        <b></b>
+                        <span style="border: 3px solid rgba(201, 201, 201, 0.733); padding: 1rem 2rem; display: flex; align-items: center;">
+                            <i style="font-size: 2rem; padding-right: 1rem; color: #6f6f6f;" class="fas fa-bars"></i>
+                            TIỆN ÍCH
+                        </span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--End Product-->
+        <!--Start Utilities-->
+        <div class="utilities">
+            <div class="container-fluid" style="width: 1200px;">
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="utilities__img">
+                            <img src="./assets/img/swift-img.jpg">
+                            <div class="utilities__img--title">
+                                <h3>ĐĂNG KÝ LÁI THỬ</h3>
+                                <span style="font-size: 2.5rem; font-family: SFProDisplay-Semibold; color: #fff;">TẠI SHOWROOM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="utilities__img" style="margin-bottom: 2.8rem;">
+                                    <img src="./assets/img/caculator.png">
+                                    <div class="utilities__img--title">
+                                        <h3>DỰ ĐOÁN CHI PHÍ</h3>
+                                        <span style="font-size: 2.5rem; font-family: SFProDisplay-Semibold; color: #fff;">THỦ TỤC TRẢ GÓP</span>
+                                    </div>
+                                </div>
+                                <div class="utilities__img">
+                                    <img src="./assets/img/repair-img.jpg">
+                                    <div class="utilities__img--title">
+                                        <h3>PHỤ KIỆN SUZUKI</h3>
+                                        <span style="font-size: 2.5rem; font-family: SFProDisplay-Semibold; color: #fff;">TẠI SOWROOM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="utilities__img" style="margin-bottom: 2.8rem;">
+                                    <img src="./assets/img/swift-img-small.jpg">
+                                    <div class="utilities__img--title">
+                                        <h3>BẢNG GIÁ XE</h3>
+                                        <span style="font-size: 2.5rem; font-family: SFProDisplay-Semibold; color: #fff;">TẠI SHOWROOM</span>
+                                    </div>
+                                </div>
+                                <div class="utilities__img">
+                                    <img src="./assets/img/showroom-img.png" class="utilities__img">
+                                    <div class="utilities__img--title">
+                                        <h3>TÌM ĐẾN</h3>
+                                        <span style="font-size: 2.5rem; font-family: SFProDisplay-Semibold; color: #fff;">SHOWROOM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Utilities-->
+        <!--Start Hot Product-->
+        <div class="hotproduct">
+            <div class="hotproduct__text">
+                <h1>SUZUKI SWIFT</h1>
+                <p style="margin-bottom: 2.5rem;">Suzuki Swift tại Việt Nam sử dụng động cơ 1.4L sản sinh công suất cực đại 94 mã lực tại vòng tua 6000 vòng/phút và mô-men-xoắn cực đại 130 Nm tại vòng tua 4000 vòng/phút. Sức mạnh này cho phép xe có khả năng tăng tốc từ 0-100km/h trong 8.7s và đạt tốc độ tối đa 200km/h. Xe trang bị hệ dẫn động cầu trước cùng hộp số tự động 4 cấp. </p>
+                <p style="margin-bottom: 6rem; font-size: 2rem;">Suzuki Long Biên - Đại lý ô tô Suzuki hàng đầu Hà nội</p>
+                <p>
+                    <a href="" class="hotproduct__text--link">LÁI THỬ</a>
+                    <a href="" class="hotproduct__text--link">CHI TIẾT</a>
+                </p>
+            </div>
+        </div>
+        <!--End Hot Product-->
+        <!--Start Service--> 
+        <div class="service">
+            <div class="container-fluid" style="width: 1200px;">
+                <div class="service__title" style="padding-top: 7rem">
+                    <h3 class="title">
+                        <b></b>
+                        <span style="border: 3px solid #fff; padding: 1rem 2rem; display: flex; align-items: center;">
+                            <i style="font-size: 2rem; padding-right: 1rem; color: #fff;" class="fas fa-bars"></i>
+                            DỊCH VỤ CHÍNH
+                        </span>
+                        <b></b>
+                    </h3>
+                </div>
+                <div class="service__content">
+                    <div class="row" style="margin-top: 10rem;">
+                        <div class="col-lg-6 service__content--item">
+                            <a href="" class="service__content--img" >
+                                <img src="./assets/img/service-1.jpg" style="width: 100%;">
+                            </a>
+                            <div class="bg-arrow">
+                                <h4>DỊCH VỤ SỬA CHỮA</h4>
+                            </div>
+                            <div class="service__img--title">
+                                <h5>DỊCH VỤ SỬA CHỮA</h5>
+                                <p>Xe tải nói riêng hay bất kỳ loại phương tiện vận chuyển nào khác, qua quá trình làm việc chúng đều bị hao mòn các chi tiết, giảm chất lượng bôi trơn và nhiều loại dung dịch khác của các hệ thống xe.</p>
+                                <p><a href="" class="service__img--btn">XEM CHI TIẾT</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 service__content--item">
+                            <a class="service__content--img" href="">
+                                <img src="./assets/img/service-3.jpg" style="width: 100%;" >
+                            </a>
+                            <div class="bg-arrow">
+                                <h4>ĐẶT LỊCH SỬA CHỮA</h4>
+                            </div>
+                            <div class="service__img--title">
+                                <h5>ĐẶT LỊCH SỬA CHỮA</h5>
+                                <p>Xe tải nói riêng hay bất kỳ loại phương tiện vận chuyển nào khác, qua quá trình làm việc chúng đều bị hao mòn các chi tiết, giảm chất lượng bôi trơn và nhiều loại dung dịch khác của các hệ thống xe.</p>
+                                <p><a href="" class="service__img--btn">XEM CHI TIẾT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-lg-6 service__content--item">
+                            <a href=""  class="service__content--img" style="padding-bottom: 15px;">
+                                <img src="./assets/img/service-2.jpg" style="width: 100%;">
+                            </a>
+                            <div class="bg-arrow">
+                                <h4>THIẾT BỊ & PHỤ TÙNG</h4>
+                            </div>
+                            <div class="service__img--title">
+                                <h5>THIẾT BỊ & PHỤ TÙNG</h5>
+                                <p>Xe tải nói riêng hay bất kỳ loại phương tiện vận chuyển nào khác, qua quá trình làm việc chúng đều bị hao mòn các chi tiết, giảm chất lượng bôi trơn và nhiều loại dung dịch khác của các hệ thống xe.</p>
+                                <p><a href="" class="service__img--btn">XEM CHI TIẾT</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 service__content--item">
+                            <a  class="service__content--img" href="">
+                                <img src="./assets/img/service-4.jpg" style="width: 100%;">
+                            </a>
+                            <div class="bg-arrow">
+                                <h4>BẢO DƯỠNG</h4>
+                            </div>
+                            <div class="service__img--title">
+                                <h5>BẢO DƯỠNG</h5>
+                                <p>Xe tải nói riêng hay bất kỳ loại phương tiện vận chuyển nào khác, qua quá trình làm việc chúng đều bị hao mòn các chi tiết, giảm chất lượng bôi trơn và nhiều loại dung dịch khác của các hệ thống xe.</p>
+                                <p><a href="" class="service__img--btn">XEM CHI TIẾT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btn">
+                        <a href="" class="service__btn--item">
+                            XEM THÊM 
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Service-->
+        <!--Start News-->
+        <div class="news">
+            <div class="container-fluid" style="width: 1200px;">
+                <div class="news__title">
+                    <h3 class="title">
+                        <b></b>
+                        <span style="border: 3px solid rgba(201, 201, 201, 0.733); padding: 1rem 2rem; display: flex; align-items: center;">
+                            <i style="font-size: 2rem; padding-right: 1rem; color: rgba(201, 201, 201, 0.733);" class="fas fa-bars"></i>
+                            TIN TỨC & SỰ KIỆN
+                        </span>
+                        <b></b>
+                    </h3>
+                </div>
+                <div class="news__list">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="">
+                                <img src="./assets/img/XL7-news.png">
+                                <a href="">
+                                    Giá xe Suzuki XL7 về Việt Nam: 
+                                    Lăn bánh, khuyến mại tháng 05/2020
+                                </a>
+                                <p>Giá xe Suzuki XL7 lăn bánh bao nhiêu? Suzuki XL7 về Việt Nam hay không?...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="">
+                                <img src="./assets/img/VAN-news.jpg">
+                                <a href="" >
+                                    <span style="margin-right: 4rem;">GIÁ XE SUZUKI VAN (SU CÓC): </span>
+                                    <span>Lăn bánh, khuyến mại tháng 05/2020</span>
+                                </a>
+                                <p>Suzuki Long Biên trân trọng gửi đến Quý khách hàng bảng cập nhật giá xe...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="">
+                                <img src="./assets/img/Ertiga-news.jpg">
+                                <a href="">
+                                    <span  style="margin-right: 4rem;">Giá xe SUZUKI ERTIGA 2020: </span>
+                                    <span>Lăn bánh, khuyến mại tháng 05/2020</span>
+                                </a>
+                                <p>Cập nhật bảng giá xe Suzuki Ertiga 2020 - dòng xe MPV 7 chỗ nhập khẩu...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="">
+                                <img src="./assets/img/news-4.jpg">
+                                <a href="">
+                                    <span  style="margin-right: 6rem;">Kinh nghiệm mua Ô TÔ MỚI</span>
+                                    <span>– 10 điều PHẢI NẮM VỮNG</span>
+                                </a>
+                                <p>Mua xe ô tô đối với những người có điều kiện thì không phải là vấn đề quá…</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--End News-->
+         <!--Start Footer-->
+        <div class="footer">
+            <div class="footer__banner">
+            <div class="container-fluid" style="width: 1200px">
+                <div class="footer__banner--item">
+                    <img src="./assets/img/logo2.png" style="width: 27%">
+                    <h3>CHÚNG TÔI TỰ HÀO LÀ NHÀ CUNG CẤP XE CHÍNH THỨC CỦA SUZUKI</h3>
+                    <a href="">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            </div>
+            <div class="footer__text">
+            <div class="container-fluid" style="width: 1200px;">
+                <div class="row" style="border-bottom: 1px solid #666666;">
+                    <div class="col-lg-12">
+                        <div class="footer__text--title">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <h4>SẢN PHẨM</h4>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h4>MUA XE</h4>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h4>DỊCH VỤ</h4>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h4>CÔNG NGHỆ</h4>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h4>LIÊN KẾT MẠNG XÃ HỘI</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <ul class="footer__text--list">
+                                    <li><a href="">Dòng xe Du lịch</a></li>
+                                    <li><a href="">Dòng xe Thương mại</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2">
+                                <ul class="footer__text--list">
+                                    <li><a href="">Bảng giá xe</a></li>
+                                    <li><a href="">Tìm đường đi</a></li>
+                                    <li><a href="">Dự toán chi phí</a></li>
+                                    <li><a href="">Đăng ký lái thử</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2">
+                                <ul class="footer__text--list">
+                                    <li><a href="">Dịch vụ sửa chữa</a></li>
+                                    <li><a href="">Đặt lịch sửa chữa</a></li>
+                                    <li><a href="">Phụ tùng</a></li>
+                                    <li><a href="">Bảo hành</a></li>
+                                    <li><a href="">Hỏi đáp</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2">
+                                <ul class="footer__text--list">
+                                    <li><a href="">An toàn</a></li>
+                                    <li><a href="">Giải trí</a></li>
+                                    <li><a href="">Chất lượng</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footer__list--icon">
+                                    <a href="" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" class="footer__icon"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="" class="footer__icon"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__last">
+                    <div class="row">
+                        <div class="col-lg-8" style="padding: 0;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>CHÍNH SÁCH BẢO MẬT VÀ ĐIỀU KHOẢN</h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5>LIÊN HỆ</h5>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-left: 15px;">
+                                <h4>CÔNG TY TNHH KINH DOANH Ô TÔ NISU</h4>
+                                <p>Giấy CNĐKDN: 0105268822 Đăng ký lần đầu: Ngày 20 tháng 04 năm 2011. Đăng ký thay đổi ngày 02 tháng 06 năm 2014. </p>
+                                <p>Cơ quan cung cấp: Phòng đăng ký kinh doanh Sở kế hoạch và đầu tư Hà Nội</p>
+                            </div>
+                            <div style="display: flex; padding-top: 1.5rem;">
+                                <p style="margin-right: 4rem;">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    449 Nguyễn Văn Linh, Long Biên, Hà Nội
+                                </p>
+                                <p>
+                                    <i class="fab fa-telegram-plane"></i>
+                                    suzukilongbien.hn@gmail.com suzukilongbien.vn
+                                </p>
+                            </div>
+                            <div style="display: flex; padding-top: 1rem;">
+                                <p style="margin-right: 3rem">
+                                    <i class="fas fa-phone-alt"></i>
+                                    KD: 0976 189 207
+                                </p>
+                                <p style="margin-right: 3rem">
+                                    <i class="fas fa-phone-alt"></i>
+                                    CS: 0976 189 207
+                                </p>
+                                <p style="margin-right: 3rem">
+                                    <i class="fas fa-phone-alt"></i>
+                                    DV: 0976 189 207
+                                </p>
+                                <p>
+                                    <i class="fas fa-fax"></i>
+                                    024 3875 8866
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style="display: flex; flex-direction: column; align-items: flex-end;">
+                            <p>Copyright © 2018 Suzuki Long Biên. All rights reserved.</p>
+                            <img src="./assets/img/bct.png" style="margin-top: 2rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--End footer-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="./assets/owl-carousel/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <script>
+        $('.product__item').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.banner').owlCarousel({
+        animateOut: 'slideOutLeft',
+        items:1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+    });
+    </script>
+    <script type="text/javascript">
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('.header__menu').addClass('menu__scroll');
+            }
+            else {
+                $('.header__menu').removeClass('menu__scroll');
+            }
+        })
+    </script>
+    <script>
+        var height = $('.header__top').height();
+        $(window).scroll(function () {
+            if($(this).scrollTop() > height) {
+                $('.header__menu').addClass('fixed');
+            }
+            else {
+                $('.header__menu').removeClass('fixed');
+            }
+        })
+    </script>
+</body>
+</html>
